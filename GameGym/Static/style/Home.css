@@ -104,6 +104,32 @@ text-align: center;
 
 color: #FFFFFF;
 }
+
+.registration{ /* Авторизоваться */
+position: absolute;
+width: 257px;
+height: 31px;
+left: 1863px;
+top: 105px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 25.8333px;
+line-height: 31px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+
+.container{
+position: absolute;
+left: 1000px;
+top: 405px;
+}
 /*footer styles*/
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");

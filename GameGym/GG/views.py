@@ -6,7 +6,7 @@ from django.shortcuts import render
 from django.urls import reverse_lazy, path
 from django.views import generic
 
-
+from .forms import *
 
 def index(request):
     return render(request, "home.html")
@@ -25,6 +25,15 @@ def index(request):
 #         return dict(list(context.items()) + list(c_def.items()))
 
 class SignUpView(generic.CreateView):
-    form_class = UserCreationForm
+    form_class = RegisterUserForm
     success_url = reverse_lazy('login')
     template_name = 'registration/signup.html'
+
+def Map(request):
+    return render(request, "maps.html")
+
+def bron(request):
+    return render(request, "bron.html")
+
+def info(request):
+    return render(request, "info.html")

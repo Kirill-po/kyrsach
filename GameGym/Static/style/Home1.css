@@ -120,6 +120,13 @@ footer{
   color: #ffffff;
 }
 
+.wrapper .phone:hover,
+.wrapper .phone:hover .tooltip,
+.wrapper .phone:hover .tooltip::before {
+  background: #fff00f;
+  color: #ffffff;
+}
+
 .wrapper .instagram:hover,
 .wrapper .instagram:hover .tooltip,
 .wrapper .instagram:hover .tooltip::before {
@@ -139,10 +146,7 @@ text-align:right;
 margin-top 100px;
 
 }
-.img-cergay{
-width: 25%; /* Ширина изображений */
-height: auto; /* Высота изображении */
-border: 5px solid #9932cc;border-top-left-radius: 100% 20px; border-bottom-right-radius: 100% 20px;
+
 
 }
 /*.text-informations{
@@ -246,9 +250,6 @@ h1{
     100% {transform: translateX(200%)}
 }
 
-.icon VK{ /* иконка вк */
-background-image: url(../image/vk.png);
-}
 
 
 

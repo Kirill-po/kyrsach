@@ -5,8 +5,9 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from django.urls import reverse_lazy, path
 from django.views import generic
-
+from .models import *
 from .forms import *
+
 
 def index(request):
     return render(request, "home.html")
@@ -36,4 +37,23 @@ def bron(request):
     return render(request, "bron.html")
 
 def info(request):
+    # pc = Pc.object.all()
+    # context = {
+    #     'pr' : pc
+    # }
     return render(request, "info.html")
+
+# fields = '__all__'
+
+class Bron(generic.CreateView):
+    model = Time_base
+    fields = '__all__'
+    template_name = 'bron.html'
+    success_url = reverse_lazy('base.html')
+
+class PCListView(generic.ListView):
+    model = Type_pc
+    template_name = 'maps.html'
+
+def connect(request):
+    return render(request, "connect.html")

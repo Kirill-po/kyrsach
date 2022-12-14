@@ -5,6 +5,7 @@ background-repeat: no-repeat;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: 110%;
+
 }
 
 main{
@@ -14,6 +15,12 @@ position: absolute;
 width: 800px;
 height: 1000px;
 background-size: 100%;
-
 transform: rotate(-90deg);
+}
+.table{
+background-color: white;
+position: absolute;
+width: 800px;
+height: 100px;
+
 }
